@@ -1,6 +1,6 @@
 {% set name = "somoclu" %}
 {% set version = "1.7.5" %}
-{% set sha256 = "428d38ee2313fe10703c92b94c36fcab45361eaba2d9881a45bb91ac9b7a26e7" %}
+{% set sha256 = "23788590e545ec81f7d19e9517c47edcc93ba96dffc8e70654445a8241b98cf2" %}
 
 package:
   name: {{ name|lower }}
