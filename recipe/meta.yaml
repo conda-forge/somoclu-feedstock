@@ -22,15 +22,20 @@ requirements:
   build:
     - python
     - setuptools
-    - gcc
-    - numpy 1.10.*
+    - numpy >=1.10
+    - gcc           # [linux]
+    - clangdev      # [osx]
+    - libcxx 4.0.*  # [osx]
+    - openmp 4.0.*  # [osx]
   run:
     - python
-    - libgcc
     - numpy >=1.10
     - scipy
     - matplotlib
-
+    - libgcc        # [linux]
+    - libcxx >=4.0  # [osx]
+    - openmp >=4.0  # [osx]
+    
 test:
   imports:
     - somoclu
