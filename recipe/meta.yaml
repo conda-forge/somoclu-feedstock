@@ -1,5 +1,5 @@
 {% set name = "somoclu" %}
-{% set version = "1.7.5-pre" %}
+{% set version = "1.7.5" %}
 {% set sha256 = "428d38ee2313fe10703c92b94c36fcab45361eaba2d9881a45bb91ac9b7a26e7" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}-pre.tar.gz
+  # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}-pre.tar.gz
   url: https://github.com/peterwittek/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
