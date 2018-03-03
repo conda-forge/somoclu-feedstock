@@ -1,15 +1,14 @@
 {% set name = "somoclu" %}
 {% set version = "1.7.5" %}
-{% set sha256 = "49d696c4497d29814fbe227fbeb210cc892357f296b405b19b98fc97d88e6bdd" %}
+{% set sha256 = "60d557d7c23ac4fa3fc16d3b86065b879d930351c07ffec8d60d1f02e868921e" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-1.7.4.tar.gz
-  # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}-pre.tar.gz
-  url: https://github.com/peterwittek/somoclu/releases/download/{{ version }}-pre/somoclu-1.7.4.tar.gz
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
