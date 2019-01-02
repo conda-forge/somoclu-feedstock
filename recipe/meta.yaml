@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 1001
   skip: True  # [win]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -24,16 +24,13 @@ requirements:
     - python
     - setuptools
     - numpy
-    - clangdev      # [osx]
-    - libcxx 4.0.*  # [osx]
-    - openmp 4.0.*  # [osx]
+    - llvm-openmp  # [osx and c_compiler == "clang"]
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - scipy
     - matplotlib
-    - libcxx >=4.0  # [osx]
-    - openmp >=4.0  # [osx]
+    - llvm-openmp  # [osx and c_compiler == "clang"]
 
 test:
   imports:
