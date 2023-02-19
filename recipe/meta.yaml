@@ -38,8 +38,8 @@ test:
 
 about:
   home: http://github.com/peterwittek/somoclu
-  license: GPL-3.0
-  license_family: GPL
+  license: MIT
+  license_family: MIT
   license_file: LICENSE
   summary: 'Massively parallel self-organizing maps: accelerate training on multicore CPUs and GPUs'
   doc_url: https://somoclu.readthedocs.org/
