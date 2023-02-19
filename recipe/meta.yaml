@@ -1,6 +1,6 @@
 {% set name = "somoclu" %}
-{% set version = "1.7.5" %}
-{% set sha256 = "60d557d7c23ac4fa3fc16d3b86065b879d930351c07ffec8d60d1f02e868921e" %}
+{% set version = "1.7.6" %}
+{% set sha256 = "3c3a7e54c3659ba214c644a0de0a4cc3fe55126a57c9c19920fa5609f5c8f664" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1005
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
